@@ -1,4 +1,4 @@
-const speed = 0.05
+const speed = 0.01
 class State {
 
     constructor() {
@@ -20,6 +20,8 @@ class State {
     startUpdating(cb) {
         if (this.dir == 0 && this.scale == 0) {
             this.dir = 1
+            cb()
         }
     }
 }
+module.exports = State

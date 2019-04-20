@@ -1,4 +1,4 @@
-const delay = 100
+const delay = 120
 class Animator {
     start(cb) {
         if (!this.animated) {
@@ -14,3 +14,4 @@ class Animator {
         }
     }
 }
+module.exports = Animator
